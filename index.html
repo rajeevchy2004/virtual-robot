@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sophia - Your Virtual Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="virtual.png" alt="Sophia Logo" class="logo">
+    </header>
+    <div class="content">
+        <span id="element" class="robot-text"></span>
+        <h1>Hi, I am Sophia Robot</h1> 
+        <h2>your virtual assistant</h2>
+        <p class="help-text">How can I help you?</p>
+        <button id="voiceButton">
+            <img src="mic.png" alt="Mic Icon" class="mic-icon"> Click here to talk with me
+        </button>
+        <div id="response"></div>
+        <div class="social-media">
+            <a href="https://www.instagram.com/rajeevchy.07?igsh=MXFsZWM1MXh1cGc0" target="_blank"><img src="insta.jpeg" alt="Instagram"></a>
+            <a href="https://accounts.google.com/login" target="_blank"><img src="google.jpeg" alt="Google"></a>
+            <a href="https://www.linkedin.com/in/rajeev-kumar-choudhary-716811318" target="_blank"><img src="linkedin.jpeg" alt="LinkedIn"></a>
+            <a href="https://github.com/login" target="_blank"><img src="github.jpeg" alt="GitHub"></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>Sophia</i>', 'Your <span style="color:rgb(230, 14, 14);">Virtual</span> Assistant'],
+            typeSpeed: 50,
+            loop: true,
+            backSpeed: 30,
+            backDelay: 1000,
+        });
+    </script>
+</body>
+</html>
